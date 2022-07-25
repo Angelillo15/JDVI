@@ -88,6 +88,7 @@ public class Install : MonoBehaviour
             string pathvar = System.Environment.GetEnvironmentVariable("PATH", User);
             System.Environment.SetEnvironmentVariable("PATH", pathvar + @";"+ javaBinPath, User);        
             Debug.Log("Agregada");
+            
         }
         
         
