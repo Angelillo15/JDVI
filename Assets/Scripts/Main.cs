@@ -23,7 +23,7 @@ public class Main : MonoBehaviour
 
         foreach (GameObject button in objs)
         {
-            button.SetActive(false);
+            button.GetComponent<Button>().interactable = false;
         }
     }
     
