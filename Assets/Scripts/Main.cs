@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Main : MonoBehaviour
 {
-    public string version = "0.1";
+    public string version;
     
 
     

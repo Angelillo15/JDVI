@@ -60,8 +60,6 @@ public class Install : MonoBehaviour
                 Delete delete = yes.GetComponent<Delete>();
                 delete.javaVer = javaVer;
                 delete.alreadyInstall = alreadyInstall;
-                Text text = FindChildRecursive(_installComplete, "Text").GetComponent<Text>();
-                text.text = text.text.Replace("{ver}", javaVer);
                 alreadyInstall.SetActive(true);
             }
 
@@ -96,6 +94,10 @@ public class Install : MonoBehaviour
         Debug.Log(System.Environment.GetEnvironmentVariable("PATH", User));
         _installing.SetActive(false);
         Main.EnableButtons();
+        Text text = FindChildRecursive(_installComplete, "Text").GetComponent<Text>();
+        Text textDefault = FindChildRecursive(_installComplete, "TextDefault").GetComponent<Text>();
+
+        text.text = textDefault.text.Replace("java{ver}", "java"+javaVer);
         _installComplete.SetActive(true);
         Start();
 

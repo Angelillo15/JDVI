@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Windows;
+using System.IO;
+using Directory = System.IO.Directory;
+
 
 public class Delete : MonoBehaviour
 {
@@ -11,7 +14,7 @@ public class Delete : MonoBehaviour
     public GameObject alreadyInstall;
     public void delete()
     {
-        Directory.Delete(Application.persistentDataPath + "/java" + javaVer);
+        Directory.Delete(Application.persistentDataPath + "/java" + javaVer, true);
         Debug.Log("Java unnistall");
         Debug.Log(Application.persistentDataPath + "/java" + javaVer);
         alreadyInstall.SetActive(false);
