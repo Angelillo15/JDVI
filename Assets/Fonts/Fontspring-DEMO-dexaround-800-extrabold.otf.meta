@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 6c45b0482e3e4634396da20c802050df
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: FONTSPRING DEMO - Dexa Round ExtBd
+  fontNames:
+  - FONTSPRING DEMO - Dexa Round ExtBd
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
